@@ -26,6 +26,11 @@
   gap: 10px;
 }
 
+.svg-link {
+  display: inline-flex;
+  align-items: center; /* Center vertically */
+  justify-content: center;
+}
 svg:hover {
   cursor: pointer;
 }
@@ -90,6 +95,11 @@ svg:hover {
     align-items: center;
     
   }
+  .svg-link {
+    display: inline-flex;
+    align-items: center; /* Center vertically */
+    justify-content: center;
+  }
   svg{
     height: 25%;
     width: 25%;
@@ -98,4 +108,5 @@ svg:hover {
     font-size: 12px;
 
   }
+
 }
