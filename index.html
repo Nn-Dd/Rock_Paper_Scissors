@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper or Scissors</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        Rock, Paper or Scissors <br />
+        Make a selection and play against the computer
+      </div>
+      <div class="game">
+        <picture>
+          <img
+            src="images/hand.png"
+            alt="hand"
+            onclick="getPlayerChoiceHand()"
+            height="256px"
+            width="256px"
+          />
+          <img
+            src="images/rock.png"
+            alt="rock"
+            onclick="getPlayerChoiceRock()"
+            height="256px"
+            width="256px"
+          />
+          <img
+            src="images/scissors.png"
+            alt="scissors"
+            onclick="getPlayerChoiceScissors()"
+            height="256px"
+            width="256px"
+          />
+        </picture>
+        <p>Your selection is: <span id="playerSelection-span"></span></p>
+        <p>
+          The computer's selection is: <span id="computerSelection-span"></span>
+        </p>
+        <p>The winner is: <span id="winner-span"></span></p>
+      </div>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
+
+<!-- <a href="https://www.flaticon.com/free-icons/rock-paper-scissors" 
+title="rock paper scissors icons">Rock paper scissors icons created 
+by Cap Cool - Flaticon</a> 
+-->
