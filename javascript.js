@@ -1,5 +1,5 @@
 let playerChoice = "";
-let winner = document.getElementById("winner-span");
+let winner = document.getElementById("winner");
 
 function getComputerChoice() {
   const threeChoices = ["Rock", "Paper", "Scissors"];
@@ -43,12 +43,14 @@ function game(playerChoice, computerChoice) {
       document.getElementById("computerSelection-span").innerHTML =
         computerChoice;
       document.getElementById("playerSelection-span").innerHTML = playerChoice;
+      document.getElementById("winner-p").innerHTML = "The winner is: ";
       break;
     default:
       winner.innerText = "Computer wins!";
       document.getElementById("computerSelection-span").innerHTML =
         computerChoice;
       document.getElementById("playerSelection-span").innerHTML = playerChoice;
+      document.getElementById("winner-p").innerHTML = "The winner is: ";
       break;
   }
 }
