@@ -30,7 +30,8 @@ function game(playerChoice, computerChoice) {
 
   switch (true) {
     case playerChoice === computerChoice:
-      winner.innerText = "It's a draw!!!";
+      winner.innerText = "";
+      document.getElementById("winner-p").innerHTML = "It's a draw!!!";
       document.getElementById("computerSelection-span").innerHTML =
         computerChoice;
       document.getElementById("playerSelection-span").innerHTML = playerChoice;
