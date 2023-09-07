@@ -43,14 +43,14 @@ function game(playerChoice, computerChoice) {
       document.getElementById("computerSelection-span").innerHTML =
         computerChoice;
       document.getElementById("playerSelection-span").innerHTML = playerChoice;
-      document.getElementById("winner-p").innerHTML = "The winner is: ";
+      document.getElementById("winner-p").innerHTML = "Who's gonna win? ";
       break;
     default:
       winner.innerText = "Computer wins!";
       document.getElementById("computerSelection-span").innerHTML =
         computerChoice;
       document.getElementById("playerSelection-span").innerHTML = playerChoice;
-      document.getElementById("winner-p").innerHTML = "The winner is: ";
+      document.getElementById("winner-p").innerHTML = "Who's gonna win? ";
       break;
   }
 }

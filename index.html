@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock, Paper or Scissors</title>
@@ -11,22 +18,26 @@
   <body>
     <div class="container">
       <div class="header">
-        Rock, Paper or Scissors <br />
-        Make a selection and play against the computer
+        <span class="center-title">
+          <span class="span-grey">Rock,</span>
+          <span class="span-silver">Paper </span> or
+          <span class="span-red">Scissors </span></span
+        >
+        <p>Make a selection and play against the computer</p>
       </div>
       <div class="game">
-        <picture>
-          <img
-            src="images/hand.png"
-            alt="hand"
-            onclick="getPlayerChoiceHand()"
-            height="256px"
-            width="256px"
-          />
+        <div class="images">
           <img
             src="images/rock.png"
             alt="rock"
             onclick="getPlayerChoiceRock()"
+            height="256px"
+            width="256px"
+          />
+          <img
+            src="images/hand.png"
+            alt="hand"
+            onclick="getPlayerChoiceHand()"
             height="256px"
             width="256px"
           />
@@ -37,13 +48,16 @@
             height="256px"
             width="256px"
           />
-        </picture>
-        <p>Your selection is: <span id="playerSelection-span"></span></p>
-        <p>
-          The computer's selection is: <span id="computerSelection-span"></span>
-        </p>
-        <p id="winner-p">The winner is:</p>
-        <p id="winner"></p>
+        </div>
+        <div class="selections-winner">
+          <p>Your selection is: <span id="playerSelection-span"></span></p>
+          <p>
+            The computer's selection is:
+            <span id="computerSelection-span"></span>
+          </p>
+          <p id="winner-p">Who's gonna win? </p>
+          <p id="winner"></p>
+        </div>
       </div>
     </div>
     <script src="javascript.js"></script>
