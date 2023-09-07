@@ -1,5 +1,8 @@
 let playerChoice = "";
 let winner = document.getElementById("winner");
+var svgRock = document.getElementById("rock");
+var svgHand = document.getElementById("hand");
+var svgScissors = document.getElementById("scissors");
 
 function getComputerChoice() {
   const threeChoices = ["Rock", "Paper", "Scissors"];
@@ -7,18 +10,42 @@ function getComputerChoice() {
 }
 
 function getPlayerChoiceHand() {
+  if (svgHand) {
+    // Change the fill color of the SVG
+    svgRock.style.fill = "#000000";
+    svgHand.style.fill = "#748cab";
+    svgScissors.style.fill = "#000000";
+
+    playerChoice = "Rock";
+    const computerChoice = getComputerChoice();
+    game(playerChoice, computerChoice);
+  }
+
   playerChoice = "Hand";
   const computerChoice = getComputerChoice();
   game(playerChoice, computerChoice);
 }
 
 function getPlayerChoiceRock() {
-  playerChoice = "Rock";
-  const computerChoice = getComputerChoice();
-  game(playerChoice, computerChoice);
+  if (svgRock) {
+    // Change the fill color of the SVG
+    svgRock.style.fill = "#353a47";
+    svgHand.style.fill = "#000000";
+    svgScissors.style.fill = "#000000";
+
+    playerChoice = "Rock";
+    const computerChoice = getComputerChoice();
+    game(playerChoice, computerChoice);
+  }
 }
 
 function getPlayerChoiceScissors() {
+  if (svgScissors) {
+    // Change the fill color of the SVG
+    svgRock.style.fill = "#000000";
+    svgHand.style.fill = "#000000";
+    svgScissors.style.fill = "#ed254e";
+  }
   playerChoice = "Scissors";
   const computerChoice = getComputerChoice();
   game(playerChoice, computerChoice);
