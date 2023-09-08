@@ -1,3 +1,6 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 .container {
   display: flex;
   margin: 20px;
@@ -67,15 +70,13 @@ svg:hover {
   .images {
     flex-direction: row;
     align-items: center;
-    
   }
-  svg{
+  svg {
     height: 40%;
     width: 40%;
   }
-  .selections-winner{
+  .selections-winner {
     font-size: 18px;
-
   }
 }
 
@@ -93,20 +94,17 @@ svg:hover {
   .images {
     flex-direction: row;
     align-items: center;
-    
   }
   .svg-link {
     display: inline-flex;
     align-items: center; /* Center vertically */
     justify-content: center;
   }
-  svg{
+  svg {
     height: 25%;
     width: 25%;
   }
-  .selections-winner{
+  .selections-winner {
     font-size: 12px;
-
   }
-
 }
