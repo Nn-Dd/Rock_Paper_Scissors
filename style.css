@@ -1,6 +1,9 @@
 * {
   outline: none;
 }
+html{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 .container {
   display: flex;
   margin: 20px;
